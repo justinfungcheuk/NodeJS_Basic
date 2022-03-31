@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Login</h1>
+        <!-- method 是用來告訴表單要發 POST請求，還是 GET請求，因為一般表單是用 POST方法 提交數據， 所以設置 method="POST"
+             action 是用來告訴表單 POST請求 要發到後端哪一個 URL，當表單在提交的時候就會把數據發到這個 URL （在這裏也就是 action="/process-login" ）
+         -->
+        <form method="POST" action="/process-login">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+
